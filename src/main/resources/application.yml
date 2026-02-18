@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/StoreTech
+    username: root
+    password: 200004602360
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
