@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin
 @RequestMapping("/customer")
 public class CustomerController {
 
@@ -26,7 +27,7 @@ public class CustomerController {
     public void deleteCustomer(@PathVariable String id){
         service.deleteCustomer(id);
     }
-    @GetMapping("/get-all-customers")
+    @GetMapping("/getallcustomers")
     List<CustomerDto> getAllCustomers(){
         return service.getAllCustomers();
     }
