@@ -1,10 +1,10 @@
-package edu.icet.service;
+package edu.icet.repository;
 
 import edu.icet.dto.CustomerDto;
 
 import java.util.List;
 
-public interface CustomerService {
+public interface CustomerRepository {
 
     void addCustomer(CustomerDto customerDto);
 
@@ -12,5 +12,5 @@ public interface CustomerService {
 
     void deleteCustomer(String id);
 
-    List <CustomerDto> getAllCustomers();
+    List<CustomerDto> getAllCustomers();
 }

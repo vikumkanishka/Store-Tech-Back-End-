@@ -2,6 +2,8 @@ package edu.icet.dto;
 
 import lombok.*;
 
+import java.util.Date;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -11,9 +13,19 @@ public class CustomerDto {
 
     private String id;
 
+    private String title;
+
     private String name;
 
-    private String email;
+    private Date dob;
 
-    private Integer phone;
+    private Double salary;
+
+    private String address;
+
+    private String city;
+
+    private String province;
+
+    private String postalcode;
 }

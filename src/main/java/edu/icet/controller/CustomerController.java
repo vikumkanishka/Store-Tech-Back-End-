@@ -9,12 +9,13 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/customer")
 public class CustomerController {
 
     final CustomerService service;
 
     @PostMapping("/add-customer")
-    public void AddCustomer(CustomerDto customerDto) {
+    public void AddCustomer(@RequestBody CustomerDto customerDto) {
         service.addCustomer(customerDto);
     }
     @PutMapping("/update-customer")
