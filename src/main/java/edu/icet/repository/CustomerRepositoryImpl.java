@@ -27,7 +27,7 @@ public class CustomerRepositoryImpl implements CustomerRepository{
                 customerDto.getAddress(),
                 customerDto.getCity(),
                 customerDto.getProvince(),
-                customerDto.getPostalcode()
+                customerDto.getPostalCode()
         );
     }
 
@@ -57,7 +57,7 @@ public class CustomerRepositoryImpl implements CustomerRepository{
             customerDto.setAddress(rs.getString(6));
             customerDto.setCity(rs.getString(7));
             customerDto.setProvince(rs.getString(8));
-            customerDto.setPostalcode(rs.getString(9));
+            customerDto.setPostalCode(rs.getString(9));
 
             return customerDto;
         });

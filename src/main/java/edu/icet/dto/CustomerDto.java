@@ -27,5 +27,5 @@ public class CustomerDto {
 
     private String province;
 
-    private String postalcode;
+    private String postalCode;
 }
