@@ -51,6 +51,10 @@ public class CustomerRepositoryImpl implements CustomerRepository{
     @Override
     public void deleteCustomer(String id) {
 
+        String sql = "DELETE FROM customer WHERE CustID = ?";
+
+        jdbcTemplate.update(sql, id);
+
     }
 
     @Override
