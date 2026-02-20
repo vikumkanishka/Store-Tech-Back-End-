@@ -21,12 +21,12 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void updateCustomer(CustomerDto customerDto) {
-
+        repository.updateCustomer(customerDto);
     }
 
     @Override
     public void deleteCustomer(String id) {
-
+        repository.deleteCustomer(id);
     }
 
     @Override

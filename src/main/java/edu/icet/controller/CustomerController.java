@@ -15,7 +15,7 @@ public class CustomerController {
 
     final CustomerService service;
 
-    @PostMapping("/add-customer")
+    @PostMapping("/addCustomer")
     public void AddCustomer(@RequestBody CustomerDto customerDto) {
         service.addCustomer(customerDto);
     }

@@ -33,7 +33,19 @@ public class CustomerRepositoryImpl implements CustomerRepository{
 
     @Override
     public void updateCustomer(CustomerDto customerDto) {
+        String sql = "UPDATE customer SET CustTitle = ?, CustName = ?, DOB = ?, salary = ?, CustAddress = ?, City = ?, Province = ?, PostalCode = ? WHERE CustID = ?";
 
+        jdbcTemplate.update(sql,
+                customerDto.getTitle(),
+                customerDto.getName(),
+                customerDto.getDob(),
+                customerDto.getSalary(),
+                customerDto.getAddress(),
+                customerDto.getCity(),
+                customerDto.getProvince(),
+                customerDto.getPostalCode(),
+                customerDto.getId()
+        );
     }
 
     @Override
