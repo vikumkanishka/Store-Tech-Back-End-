@@ -19,11 +19,11 @@ public class CustomerController {
     public void AddCustomer(@RequestBody CustomerDto customerDto) {
         service.addCustomer(customerDto);
     }
-    @PutMapping("/update-customer")
+    @PutMapping("/updatecustomer")
     public void updateCustomer(@RequestBody CustomerDto customerDto){
         service.updateCustomer(customerDto);
     }
-    @DeleteMapping("/delete-customer/{id}")
+    @DeleteMapping("/deletecustomer/{id}")
     public void deleteCustomer(@PathVariable String id){
         service.deleteCustomer(id);
     }
